@@ -15,6 +15,7 @@ html, body {
     width: 100%;
     display: flex;
     border-bottom:0.5px solid white;
+    z-index: 1000;
      
 }
 #logo{
@@ -29,10 +30,6 @@ html, body {
     align-items: center;
     font-size: 18px;
     font-weight: 300;
-
-  
-    
-      
 }
 .nav_body a{
      color: white;
@@ -64,6 +61,7 @@ select option{
     outline: none;
     background: transparent;
     font-size: 18px;
+    cursor: pointer;
 }
 /* .right_nav select option{
     background-color: black;
@@ -77,6 +75,7 @@ select option{
     text-align: center;
     /* border: none; */
     font-weight: 700;
+    cursor: pointer;
        
 }
 #log{
@@ -114,45 +113,111 @@ select option{
 #card_1{
     width: 100%;
     height: 900px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgba(0, 0, 0, 0);  */
+    /* position:relative */
+   
 }
-#video_1{
-    width: 100%;
-    
-}
-#card_1_content{
-
-}
-/* #heading{
-    padding-top: 50px;
-    padding-left: 20px;
-    font-family: Martina Plantijn, serif;
-    font-style: normal;
-    color: gold;
-    font-weight: 400;
-     */
-}  
+    #video_1{
+        width: 100%;   
+    }
+    .card_1_content{
+        /* background-color: black; */
+        position: absolute;
+        top: 165px;
+        left: 245px;
+        /* border-radius: 15px; */
+        width: 470px;
+    }
+    #date{
+        color:rgba(255,255,255,0.3);
+        font-weight: 400;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    }
+    #heading{
+        font-family: Martina Plantijn, serif;
+        font-style: normal;
+        font-size: 60px;
+        color: #b8a36a;
+        font-weight: 400;
+    }  
+    #para{
+        color:white;
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #terms{
+        color:rgba(255,255,255,0.7);
+        font-family: Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 200;
+        font-size: 10px;
+    }
+    #button_1{
+        border-radius: 50px;
+        font-size: 15px;
+        width: 120px;
+        padding: 10px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+    }
+   
 #card_2{
     width: 100%;
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg");
+    background-size: cover ;
     height: 800px;
     background-color: green;
+    
 }
-#img_2{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}  
+    .card_2_content{
+        position: relative;
+        left: 850px;
+        top: 250px;
+        width: 364px;
+      
+    }
+    #line_1{
+        /* font-size: 32px; */
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 300;
+        color:#ccff00
+    }
+    #rem_line{
+        font: size 30px;
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-weight: 300;
+        color:#ffffff
+    }
+    #last_line{
+        color:#ffffff;
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+
+
+    }
+    #button_2{
+        border-radius: 50px;
+        background-color: #ccff00;
+        font-size: 15px;
+        width: 100px;
+        padding: 10px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+    }
 #card_3{
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/2zqFBs1Dk1ZFLa68vgaCUM/ae93f6273da3b74ae09899a4cdcee75e/wide_crypto_hero_4k_test_2.jpg");
+    background-size: cover;
     width: 100%;
     height: 800px;
-    background-color: blue;
+    background-color: rgb(0, 255, 34);
+  
 }
-#img_3{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}  
 #card_4{
+    background-image: url("https://images.ctfassets.net/ilblxxee70tt/54Guv4y5evT0ZpKTaC09c1/391b135f648b2582deff63a48ef63c10/RH25_Strategiespromo_wide_homepage_hero_4k.jpeg");
     width: 100%;
     height: 800px;
     background-color: yellow;
