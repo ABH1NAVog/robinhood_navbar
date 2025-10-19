@@ -4,6 +4,7 @@ body{
 html, body {
   margin: 0;
   padding: 0;
+  /* padding-top: 16px; */
 } 
 .main{
     position:fixed;
@@ -111,6 +112,7 @@ select option{
    }
 }
 #card_1{
+    position: relative;
     width: 100%;
     height: 900px;
     /* background-color: rgba(0, 0, 0, 0);  */
@@ -164,6 +166,7 @@ select option{
     }
    
 #card_2{
+    position: relative;
     width: 100%;
     background-image: url("https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg");
     background-size: cover ;
@@ -209,39 +212,320 @@ select option{
         border: none;
     }
 #card_3{
+    position: relative;
     background-image: url("https://images.ctfassets.net/ilblxxee70tt/2zqFBs1Dk1ZFLa68vgaCUM/ae93f6273da3b74ae09899a4cdcee75e/wide_crypto_hero_4k_test_2.jpg");
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 800px;
     background-color: rgb(0, 255, 34);
   
 }
+    .card_3_content{
+        position: relative;
+        left: 820px;
+        top: 250px;
+        width: 280px;
+    }
+    #img_3{
+        width: 150px;
+        height: 70px;
+    }
+    #fisrt_line{
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 450;
+        line-height: 1.9REM;
+    }
+    #card_3_para{
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 10px;
+        font-weight: 80;
+        line-height: 20px;
+    }
+    #info{
+        text-decoration: none;
+        color: rgba(0,0,0,0.4);
+    }
+    #button_3{
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        width: 100px;
+        padding: 11px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+
+        
+    }
 #card_4{
+    position: relative;
     background-image: url("https://images.ctfassets.net/ilblxxee70tt/54Guv4y5evT0ZpKTaC09c1/391b135f648b2582deff63a48ef63c10/RH25_Strategiespromo_wide_homepage_hero_4k.jpeg");
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 800px;
     background-color: yellow;
-}
-#img_4{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}    
+}   
+    .card_4_content{
+        position: relative;
+        left: 240px;
+        top: 170px;
+        width: 350px;
+    }
+    #heading_4{
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        color: white;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    #para_4{
+        color: white;
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 30px;
+       
+    }
+    #last_4{
+        color: white;
+        font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+        font-size: 10px;
+    
+    }
+    #button_4{
+        border-radius: 50px;
+        background-color: #ccff00;
+        font-size: 15px;
+        width: 200px;
+        padding: 10px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+    }
+ 
 #card_5{
+    position: relative;
     width: 100%;
     height: 800px;
-    background-color: aqua;
+    background-color:rgb(28,24,13);
+    text-align: center;
+    padding-top: 5rem;
+    
 }
+    .card_5_top{
+
+        height: auto;
+        width: 5rem;
+        margin-left: 50%;
+       
+    }
+    #heading_5{
+        color: white;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    #button_5{
+        width: 260px;
+        height: 30px;
+        background-color:rgba(0,0,0,0.1);
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 400;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-radius: 50px;
+        cursor: pointer;
+        border:0.5px solid white;
+    }
+    .card_5_content{
+        display: grid;
+        grid-template-columns: repeat(2,24rem);
+        row-gap: 10rem;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        padding-top: 5rem;
+        
+    }
+    .card_5_content div>img{
+        width: 120px;
+        height: auto;
+    }
+    .card_5_content div>h2{
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+    }
   
 #card_6{
     width: 100%;
-    height: 900px;
+    height: 80rem;
     background: violet;
+    /* position:relative */
+    
 }
-  
+    .card_6_1{
+        height: 50%;
+
+        background-color:#ccff00;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+        #card_6_1_content{
+            width:31rem;
+            margin-top: 2rem; 
+        }
+        #card_6_1_content>h1{
+            font-weight: 400;
+            font-size: 3rem;
+    
+        }
+        #card_6_1_content>p{
+            font-size: 1rem;
+        }
+        
+        #button_6{
+            width: 260px;
+            padding:3%;
+            background-color:rgba(0,0,0);
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 400;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 50px;
+            cursor: pointer;
+            border:none;
+        }
+        #testing>img{
+            width: 24rem;
+            height: auto;
+            align-items: flex-end;
+        }
+
+    .card_6_2{
+        height: 50%;
+        width: 100%;
+        background-color: aquamarine;
+        position:relative;
+        text-align: center;
+    
+
+    }
+        #video_2{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .card_6_2_content{
+            position: absolute;
+            width: 45rem;
+            top: 9rem;
+       
+            left: 25rem;
+            
+        }
+         .card_6_2_content>h1{
+            color: white;
+            font-weight: 500;
+            font-size: 5rem;
+
+         }
+        #button_6_2{
+            border-radius: 50px;
+            background-color: #ccff00;
+            font-size: 15px;
+            width: 200px;
+            padding: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            border: none;
+        }
+        
 #card_7{
     width: 100%;
-    height: 900px;
-    background-color: bisque;
+    height: auto;
+    background-color: #ccff00;
 }
+    .block_1{
+        display: flex;
+        height: 5rem;
+        border-bottom: 2px solid black;
+        align-items: center;
+    }
+        #_1{
+            text-decoration: underline;
+            font-size: 1.3rem;
+        }
+        #_2{
+            text-decoration: underline;
+            font-size: 1.3rem;
+        }
+    .block_2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+    #down_1{
+        margin-left: 20px;
+    }
+    #down_1>h1{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    #down_1>h5{
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+/* ------------------------------------------------------------------- */
+
+    #down_2>h1{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    #down_2>h5{
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+    #down_3>h1{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    #down_3>h5{
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* ------------------------------------------------------------------ */
+     #down_4>h1{
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+    #down_4>p{
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #final_name{
+        margin-left: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 17rem;
+        letter-spacing: 1rem;
+        font-weight: 550;
+    }
+
+    
   
