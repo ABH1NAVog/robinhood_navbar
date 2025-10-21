@@ -4,6 +4,8 @@ body{
 html, body {
   margin: 0;
   padding: 0;
+ 
+  overflow-x: hidden;
   
   /* padding-top: 16px; */
 } 
@@ -17,6 +19,7 @@ html, body {
     width: 100%;
     display: flex;
     border-bottom:0.5px solid white;
+    box-sizing: border-box;
     z-index: 1000;
      
 }
@@ -37,6 +40,12 @@ html, body {
      color: white;
     text-decoration: none; 
 }
+#Get_app{
+    display: none;
+    background-color:#ccff00;
+    border: none;
+}
+
 .nav_body select{
     color: white;
     border:none;
@@ -91,8 +100,13 @@ select option{
     border: none;
     
 }
-#menu{
+.material-symbols-outlined{
     display: none;
+    color: white;
+    position: absolute;
+    
+    
+    
 }
 .nav_body a:hover,.nav_body select:hover,.right_nav select:hover{
     color:#ccff00;
@@ -104,19 +118,44 @@ select option{
 
 
 
-@media screen and (max-width:600px) {
-   
-   .nav_body {
-    display: none;
-   }
-   #menu{
-    display: flex;
-   }
+                @media screen and (max-width:430px) {
+                
+                .nav_body {
+                    display: none;
+                }
+                .material-symbols-outlined{
+                    font-size: 110px;  /* your desired size */
+                    color: white;
+                    position: relative;
+                    top: 0.6rem;
+                    right: 0.9rem;
+                    display: inline-block;
 }
+                    
+                    
+                }
+                #log,#sign{
+                    display: none;
+                }
+                #Get_app{
+                    display: flex;
+                    padding:0;
+                    width: 5rem;
+                    border-radius: 50px;
+                    padding: 0.8rem;
+                    position:absolute;
+                    top:1.2rem;
+                    left: 60%;
+                }
+                #country{
+                    display: none;
+                }
+                
 #card_1{
     position: relative;
     width: 100%;
     height: 900px;
+    
     /* background-color: rgba(0, 0, 0, 0);  */
     /* position:relative */
    
@@ -169,13 +208,18 @@ select option{
         cursor: pointer;
         border: none;
     }
-                 @media screen and (max-width:600px) {
+                 @media screen and (max-width:430px) {
                     #video_1{
                         display: none;
                     }
                     #card_1{
-                        height: 1100px;
+                        height: 1200px;
+                        text-align: center;
                     }
+                    .card_1_content{
+                        width: 20rem;
+                        left: 11rem;
+                    }      
                     #mobile_video{
                         display: block;
                         width: 100%;
@@ -185,9 +229,10 @@ select option{
                     }
                     .card_1_content{
                         position:absolute;
-                        left: 3rem;
+                        left: 2.5rem;
                     }
-                 }   
+                }
+                  
 #card_2{
     position: relative;
     width: 100%;
@@ -214,12 +259,14 @@ select option{
         font: size 30px;
         font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         font-weight: 300;
+        
         color:#ffffff
     }
     #last_line{
         color:#ffffff;
         font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
         font-size: 14px;
+        line-height: 1.4rem;
         font-weight: 500;
 
 
@@ -234,7 +281,7 @@ select option{
         cursor: pointer;
         border: none;
     }
-                    @media screen and (max-width:600px) {
+                    @media screen and (max-width:430px) {
                     #card_2{
                         background-image: url("https://images.ctfassets.net/ilblxxee70tt/1jvtb9LgLK7amOfYSgNVk7/d1504fdcb9be25bfa5142ee1481b9f32/mobile_homepage_investing_4x.jpeg");
                         background-size: cover;
@@ -245,8 +292,8 @@ select option{
                     }
                     .card_2_content{
                         position: absolute;
-                        left: 7rem;
-                        top: 7rem;
+                        left: 2rem;
+                        top: 5rem;
                     }
                     
                 
@@ -279,26 +326,26 @@ select option{
     }
     #card_3_para{
         font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-        font-size: 10px;
-        font-weight: 80;
+        font-size: 0.8rem;
+        font-weight: 100;
         line-height: 20px;
     }
     #info{
         text-decoration: none;
-        color: rgba(0,0,0,0.4);
+        color: rgba(0,0,0,0.5);
     }
     #button_3{
         border-radius: 50px;
         background-color: black;
         color: white;
         font-size: 15px;
-        width: 100px;
-        padding: 11px;
+        width: 110px;
+        padding: 10px;
         font-weight: 400;
         cursor: pointer;
         border: none;    
     }
-                @media screen and (max-width:600px) {
+                @media screen and (max-width:430px) {
                     #card_3{
                         background-image: url("https://images.ctfassets.net/ilblxxee70tt/7vB1E5FkoYiyUiDiLbBvRY/0304e170b4885b5a84042916c69bc792/mobile_crypto_hero_3.jpg");
                         background-size: cover;
@@ -307,8 +354,8 @@ select option{
                     }
                     .card_3_content{
                         position: absolute;
-                        left: 10rem;
-                        top: 10rem;
+                        left: 2rem;
+                        top: 2rem;
                     }
                     
                 
@@ -344,7 +391,9 @@ select option{
     #last_4{
         color: white;
         font-family:Phonic, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 2rem;
     
     }
     #button_4{
@@ -357,7 +406,7 @@ select option{
         cursor: pointer;
         border: none;
     }
-                     @media screen and (max-width:600px) {
+                     @media screen and (max-width:430px) {
                     #card_4{
                         background-image: url("https://images.ctfassets.net/ilblxxee70tt/42t5C9fq8xRabnCPUCaV3W/2ac191b14f3785e23d1c001d4a31bf0e/RH25_strategiespromo_mobile_homepage_hero.jpg");
                         background-size: cover;
@@ -366,8 +415,8 @@ select option{
                     }
                     .card_4_content{
                         position: absolute;
-                        left: 8rem;
-                        top: 7rem;
+                        left: 2rem;
+                        top: 6rem;
                     }
                     
                 
@@ -424,7 +473,16 @@ select option{
         font-size: 1rem;
         font-weight: 300;
     }
-  
+             @media screen and (max-width:430px) {
+                #card_5{
+                    height: auto;
+                }
+                .card_5_content{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    row-gap: 5rem;
+                }
+             }
 #card_6{
     width: 100%;
     height: 80rem;
@@ -514,13 +572,23 @@ select option{
             cursor: pointer;
             border: none;
         }
-                    @media screen and (max-width:600px) {
-                    .card_6_2_content{
-                         width:30rem;   
-                         position:absolute;
-                         left: 5rem;
-                         top: 4rem;
+                    @media screen and (max-width:430px) {
+                    #card_6_1_content{
+                         width:20rem;   
+                           
                     } 
+                    #card_6_1_content>h1{
+                        font-size: 2.3rem;
+                    }
+                     .card_6_2_content{
+                        position: absolute;
+                        width: 20rem;
+                        left: 2rem;
+
+                     }
+                      .card_6_2_content>h1{
+                        font-size: 3rem;
+                      }
 
                 }   
                            
@@ -603,11 +671,27 @@ select option{
         font-weight: 550;
     }
             
-             @media screen and (max-width:600px) {
-                #final_name{
-                    font-size: 5rem;
+             @media screen and (max-width:430px) {
+                .block_1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                 }
-                    }
+                #final_name{
+                    margin: 1rem;
+                    font-size: 3rem;
+                }
+                .block_2{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                #down_1,#down_2,#down_3{
+                    margin-left: 2rem;
+                }
+                #down_4{
+                    margin-left: 1rem
+                }
+                }
 
     
   
