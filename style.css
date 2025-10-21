@@ -102,8 +102,8 @@ select option{
 }
 .material-symbols-outlined{
     display: none;
-    color: white;
-    position: absolute;
+    
+    
     
     
     
@@ -130,10 +130,8 @@ select option{
                     top: 0.6rem;
                     right: 0.9rem;
                     display: inline-block;
-}
-                    
-                    
-                }
+                }   
+                
                 #log,#sign{
                     display: none;
                 }
@@ -150,6 +148,7 @@ select option{
                 #country{
                     display: none;
                 }
+            }
                 
 #card_1{
     position: relative;
